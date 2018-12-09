@@ -1,0 +1,136 @@
+/* Entire page */
+html {
+        background-size: cover;
+        font-family: 'Montserrat', sans-serif;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;      
+        }
+
+/* game board */
+#game{
+        text-align: center;
+        Padding: 5%;
+        max-width: 360px;
+        margin-left: 40%;
+        margin-right: 10%;
+        margin-top: 100px;
+        padding: 10px;
+        box-shadow: 30px 30px 30px rgba(0, 0, 0, .9);
+        }
+
+/* animation background*/
+div {
+        animation-name: score-board;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        -webkit-animation-name: score-board; 
+        -webkit-animation-duration: 4s; 
+        }
+
+/* background 1 */
+body{
+        background: linear-gradient(black, silver, black);
+        margin: auto;
+        max-height: 800px;
+        width: 100%;
+        }
+
+/* footer */
+#sticky {
+        width:100%;
+        height:44px;
+        padding-top:20px;
+        background: rgba(0, 0, 0, .7);
+        text-align:center;
+        position:fixed;    
+        bottom:0;    
+        left:0;           
+        }
+
+/* button */
+#btn{
+        font-weight: 600;
+        padding: 10px;
+        background: rgb(78, 78, 78, 0.6);
+        color: #00ffff;
+        box-shadow: 3px 3px 3px rgba(0, 0, 0, .7);
+        border-radius: 5%;
+        }   
+
+/* button action */
+#btn:hover{
+        font-weight: 600;
+        background: rgb(211, 211, 211, .7);
+        color: rgba(0, 0, 0) ;
+        }
+
+/*safari */
+@-webkit-keyframes score-board {
+        from {background-color: rgb(0, 255, 55);}
+        to {background-color: yellow;
+        }
+        }
+
+/* chrome, firefox, opera, IE */
+@keyframes score-board {
+        from {background-color: rgb(0, 255, 55);}
+        to {background-color: yellow;
+        }
+        }
+
+/* global width / pannel height */
+@media only screen and (max-width: 700px) {
+        body,
+        .lazer,
+        .sunnies,
+        .palm {
+        min-width: 400px;
+        min-height: 450px;
+        }
+        } 
+
+/* background_alt 1 */
+@media only screen and (max-width: 700px) {
+        body {
+        background: linear-gradient(grey, black , grey);
+        }
+        } 
+
+/* background-alt-2 1 */
+@media only screen and (max-height: 500px) {
+        body {
+        background: rgb(75, 75, 75);
+        }
+        } 
+
+/*game bord rules for reduces screen paramiters */
+        @media only screen and (max-width: 700px) {
+        #game {
+        min-width: 350px;
+        max-width: auto;
+        width: auto;
+        margin-left: 11px;
+        margin-top: 100px;
+        position: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        }
+        } 
+
+/* game board for reduced height option */
+        @media only screen and (max-height: 500px) {
+        #game {
+        min-width: 350px;
+        max-width: auto;
+        width: auto;
+        margin-left: 14px;
+        margin-top: 10px;
+        margin-bottom: 60px;
+        position: fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        }
+        } 
